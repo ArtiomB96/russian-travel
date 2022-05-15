@@ -1,0 +1,502 @@
+@font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url("Inter-Thin.woff2?v=3.19") format("woff2"),
+         url("Inter-Thin.woff?v=3.19") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 100;
+    font-display: swap;
+    src: url("Inter-ThinItalic.woff2?v=3.19") format("woff2"),
+         url("Inter-ThinItalic.woff?v=3.19") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url("Inter-ExtraLight.woff2?v=3.19") format("woff2"),
+         url("Inter-ExtraLight.woff?v=3.19") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 200;
+    font-display: swap;
+    src: url("Inter-ExtraLightItalic.woff2?v=3.19") format("woff2"),
+         url("Inter-ExtraLightItalic.woff?v=3.19") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("Inter-Light.woff2?v=3.19") format("woff2"),
+         url("Inter-Light.woff?v=3.19") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url("Inter-LightItalic.woff2?v=3.19") format("woff2"),
+         url("Inter-LightItalic.woff?v=3.19") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("Inter-Regular.woff2?v=3.19") format("woff2"),
+         url("Inter-Regular.woff?v=3.19") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("Inter-Italic.woff2?v=3.19") format("woff2"),
+         url("Inter-Italic.woff?v=3.19") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("Inter-Medium.woff2?v=3.19") format("woff2"),
+         url("Inter-Medium.woff?v=3.19") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url("Inter-MediumItalic.woff2?v=3.19") format("woff2"),
+         url("Inter-MediumItalic.woff?v=3.19") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("Inter-SemiBold.woff2?v=3.19") format("woff2"),
+         url("Inter-SemiBold.woff?v=3.19") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url("Inter-SemiBoldItalic.woff2?v=3.19") format("woff2"),
+         url("Inter-SemiBoldItalic.woff?v=3.19") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("Inter-Bold.woff2?v=3.19") format("woff2"),
+         url("Inter-Bold.woff?v=3.19") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url("Inter-BoldItalic.woff2?v=3.19") format("woff2"),
+         url("Inter-BoldItalic.woff?v=3.19") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url("Inter-ExtraBold.woff2?v=3.19") format("woff2"),
+         url("Inter-ExtraBold.woff?v=3.19") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url("Inter-ExtraBoldItalic.woff2?v=3.19") format("woff2"),
+         url("Inter-ExtraBoldItalic.woff?v=3.19") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("Inter-Black.woff2?v=3.19") format("woff2"),
+         url("Inter-Black.woff?v=3.19") format("woff");
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 900;
+    font-display: swap;
+    src: url("Inter-BlackItalic.woff2?v=3.19") format("woff2"),
+         url("Inter-BlackItalic.woff?v=3.19") format("woff");
+  }
+  
+  /* -------------------------------------------------------
+  Variable font.
+  Usage:
+  
+    html { font-family: 'Inter', sans-serif; }
+    @supports (font-variation-settings: normal) {
+      html { font-family: 'Inter var', sans-serif; }
+    }
+  */
+  @font-face {
+    font-family: 'Inter var';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: 'Regular';
+    src: url("Inter-roman.var.woff2?v=3.19") format("woff2");
+  }
+  @font-face {
+    font-family: 'Inter var';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: italic;
+    font-named-instance: 'Italic';
+    src: url("Inter-italic.var.woff2?v=3.19") format("woff2");
+  }
+  
+  
+  /* --------------------------------------------------------------------------
+  [EXPERIMENTAL] Multi-axis, single variable font.
+  
+  Slant axis is not yet widely supported (as of February 2019) and thus this
+  multi-axis single variable font is opt-in rather than the default.
+  
+  When using this, you will probably need to set font-variation-settings
+  explicitly, e.g.
+  
+    * { font-variation-settings: "slnt" 0deg }
+    .italic { font-variation-settings: "slnt" 10deg }
+  
+  */
+  @font-face {
+    font-family: 'Inter var experimental';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: oblique 0deg 10deg;
+    src: url("Inter.var.woff2?v=3.19") format("woff2");
+  }
+  
+  
+  /* --------------------------------------------------------------------------
+  [EXPERIMENTAL] Multi-axis, single variable font.
+  
+  Slant axis is not yet widely supported (as of February 2019) and thus this
+  multi-axis single variable font is opt-in rather than the default.
+  
+  When using this, you will probably need to set font-variation-settings
+  explicitly, e.g.
+  
+    * { font-variation-settings: "slnt" 0deg }
+    .italic { font-variation-settings: "slnt" 10deg }
+  
+  */
+  @font-face {
+    font-family: 'Inter var experimental';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: oblique 0deg 10deg;
+    src: url("Inter.var.woff2?v=3.19") format("woff2");
+  }
+  .body {
+      
+      
+      
+  }
+.page {
+    background-color: #2A2C2F;
+    margin: 0 auto;
+    min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1800px;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
+   
+}  
+.header {
+    width: 1184px;
+    height: 52px;
+    padding-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+.header__logo {
+    width: 176px;
+    height: 52px;
+    display: flex;
+}
+.header__lang-links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.header__lang-link {
+    width: 30px;
+    height: 28px;
+    text-decoration: none;
+    color: white;
+}
+.title {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: white;
+    margin: 0;
+}
+.subtitle {
+    margin-top: 32px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+
+}
+.lead {
+    max-width: 984px;
+    height: 1005px;
+    margin-left: 148px;
+    
+    
+    
+}
+.lead__title {
+    margin-top: 56px;
+    width: 720px;
+    height: 200px;
+    line-height: 104%;
+    font-size: 96px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+.lead__subtitle {
+    font-size: 30px;
+    width: 640px;
+    line-height: 36px;
+    height: 72px;
+    
+}
+.lead__image {
+    margin-top: 64px;
+    width: 984px;
+    height: 615px;
+    
+   
+}
+.lead__caption {
+    margin-top: 8px;
+    width: 158px;
+    height: 14px;
+    color: white;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 1.5px;
+    margin-bottom: 0;
+}
+.intro {
+    width: 690px;
+    height: 429px;
+    margin-left: 148px;
+    
+    
+}
+.intro__title {
+    width: 690px;
+    height: 58px;
+    line-height: 58px;
+    font-size: 54px;
+    margin-top: 92px ;
+}
+.text {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin: 0;
+    color: white;
+}
+.intro__text {
+    width: 690px;
+    height: 208px;
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 26.06px;
+    
+}
+.intro__list {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    width: 690px;
+    height: 90px;
+    margin-top: 33px;
+    color: white;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+.photo-grid {
+    display: grid;
+    width: 1184px;
+    height: 671px;
+    grid-template-columns: 296px 296px 296px 296px;
+    grid-template-rows: 33% 33% 33% ;
+    margin-top: 92px;
+    margin-left: 48px;
+}
+.photo-grid__item {
+    width: 284px;
+    height: 213px;
+}
+.places {
+    Width:984px;
+    Height: 3392px;
+   margin-left: 148px;
+   margin-top: 92px;
+   margin-bottom: 92px;
+
+    
+}
+.place {
+    width: 984px;
+    
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+    
+}
+.place__title {
+    Width: 460px;
+    font-size: 72px;
+    line-height: 76px;
+}
+.place__image {
+    Width: 460px;
+    Height: 460px;
+    margin-top: 48px;
+    
+}
+.place__website {
+    margin-top: 0;
+    Width: 456px;
+    Height: 46px;
+    margin-bottom: 48px;
+}
+.place__url-heading {
+    Width: 456px;
+    Height: 12px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #AAAAAA;
+    margin-bottom: 12px;
+    
+}
+.link {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color:white;
+    text-decoration: none;
+}
+.place__link {
+    Width: 456px;
+    Height: 22px;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: underline;
+    
+}
+.place__paragraph {
+    Width: 456px;
+    /* Height:174px; */
+    font-size: 18px;
+    line-height: 29.34px;
+    
+    margin-bottom: 26px;
+}
+.place__left {
+    margin-right: 40px;
+    
+    
+}
+.place__right_top106 {
+    margin-top: 106px;
+    
+}
+.place__right_top30 {
+    margin-top: 30px;
+    
+}
+.cover {
+    width: 1184px;
+    height: 740px;
+    background-image: url(../sprint-3-images/sprint-3-images/cover-trains.jpg);
+    margin-left: 48px;
+}
+.cover__title {
+    font-size: 30px;
+    width: 560px;
+    line-height: 36px;
+    height: 152px;
+    font-size: 72px;
+    line-height: 76px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 245px;
+    
+}
+.cover__subtitle {
+    font-size: 18px;
+    width: 360px;
+    line-height: 22px;
+    height: 66px;
+
+}
+.footer {
+    width: 1184px;
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 92px;
+    margin-left: 48px;
+    position: relative;
+}
+.footer__link {
+    text-decoration: none;
+    margin-right: 18px;
+    font-size: 16px;
+    line-height: 18px;
+} 
+.footer__copyright {
+    text-align: right;
+    position: absolute;
+    right: 0;
+    font-size: 14px;
+    line-height: 16px;
+}
