@@ -1,5 +1,6 @@
 .places {
    max-width: 984px;
+   width: 100%;
    margin: 0 auto;
    margin-top: 92px;
    margin-bottom: 92px;
@@ -25,5 +26,6 @@
       width: 100%;
       margin-top: 64px;
       margin-bottom: 14px;
+
    }
 }
