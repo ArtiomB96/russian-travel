@@ -1,0 +1,17 @@
+.place__bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 48px;
+    column-gap: 40px;
+}
+@media screen and (max-width: 320px) {
+    .place__bottom {
+        max-width: 288px;
+        flex-direction: column;
+        /* row-gap: 32px;
+        align-items: flex-start; */
+        margin: 0 auto ;
+        margin-top: 32px;
+    }
+}
